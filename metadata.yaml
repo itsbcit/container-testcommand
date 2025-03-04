@@ -1,9 +1,9 @@
 ---
-image_name: template_test
+image_name: testcommand
 registries:
   - url: bcit.io
 labels:
-  maintainer: "jesse@weisner.ca, github.com/deuterium"
+  maintainer: "ekraft2@bcit.ca"
 vars:
   tini_version: '0.19.0'
   de_version: '1.6'

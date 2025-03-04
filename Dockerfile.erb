@@ -1,4 +1,4 @@
-FROM busybox
+FROM bcit.io/alpine:3.20
 
 <%= snippet('labels', binding) -%>
 
@@ -6,7 +6,7 @@ FROM busybox
 
 <%= snippet('dockerize', binding) -%>
 
-<%= snippet('tini', binding) -%>
+RUN apk add --no-cache traceroute
 
 ENTRYPOINT ["/tini", "--", "/docker-entrypoint.sh"]
 CMD [ "init-loop" ]
